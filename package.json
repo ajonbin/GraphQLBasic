@@ -1,0 +1,28 @@
+{
+  "name": "graphqlbasic",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha lib/test/test.js --timeout 10000",
+    "test:mongo": "mocha lib/test/mongo_test.js --timeout 10000",
+    "build": "babel src -d lib",
+    "start": "node lib/server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3",
+    "express-graphql": "^0.6.12",
+    "graphql": "^0.13.2",
+    "mongoose": "^5.2.5"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "chai": "^4.1.2",
+    "mocha": "^5.2.0",
+    "node-fetch": "^2.2.0",
+    "nodemon": "^1.18.3"
+  }
+}
